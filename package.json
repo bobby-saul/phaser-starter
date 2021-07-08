@@ -1,19 +1,26 @@
 {
   "name": "phaser-training",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Beginning template for Phaser.io games",
+  "main": "src/index.js",
   "dependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
     "phaser": "^3.24.1",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
     "webpack": "^5.9.0",
-    "webpack-cli": "^4.2.0"
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "devDependencies": {},
   "scripts": {
     "dev": "webpack --mode 'development' --config ./webpack.config.js",
+    "start": "webpack serve --mode 'development' --config ./webpack.config.js --open",
     "watch": "webpack --mode 'development' --watch --config ./webpack.config.js",
     "prod": "webpack --config ./webpack.config.js"
   },

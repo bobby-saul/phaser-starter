@@ -1,6 +1,8 @@
 import Phaser from "phaser";
 import Preload from "./scenes/Preload";
 import Game from "./scenes/Game";
+import './index.html';
+import './styles.scss';
 
 // Step 1
 var config = {
